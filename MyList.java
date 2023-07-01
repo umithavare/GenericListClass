@@ -75,7 +75,7 @@ public class MyList <T> {
         else return null;
     }
 
-    public String toString(){
+    public String toString(){ // Sınıfa ait dizideki elemanları listeleyen bir metot.
         if (size() > 0){
             String out = "[";
             for (int i = 0; i < size() - 1; i++){
@@ -132,7 +132,7 @@ public class MyList <T> {
         return newArray;
     }
 
-    public T[] clear(){
+    public T[] clear(){ // Listedeki bütün öğeleri siler, boş liste haline getirir.
         for (int i = 0 ; i < genericArray.length ; i++){
             getGenericArray()[i] = null;
         }
